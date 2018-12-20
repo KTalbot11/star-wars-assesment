@@ -9,11 +9,7 @@
   </select>
 
   <label for="keyword">keyword</label>
-  <input
-  type="text"
-  name="keyword"
-  required
-  >
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
 
-  <button>Submit</button>
+  <button >Submit</button>
 </form>

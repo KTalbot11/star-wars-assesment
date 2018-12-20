@@ -1,20 +1,11 @@
-module.exports = function (sequelize, DataTypes) {
-    return sequelize.define('people',{
-        name:[],
-        height:[],
-        mass:[],
-        hair_color:[],
-        skin_color:[],
-        eye_color:[],
-        birth_year:[],
-        gender:[],
-        homeworld:[],
-        films:[],
-        species:[],
-        vehicles:[],
-        starships:[],
-        created:[],
-        edited:[],
-        url:[]
-    })
+export class People {
+            name:string
+            height:string
+            mass: string
+            hair_color: string
+            skin_color: string
+            eye_color: string
+            birth_year: string
+            gender: string
+            homeworld: string
 }
